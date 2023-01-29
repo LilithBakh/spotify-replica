@@ -1,0 +1,107 @@
+/*Side Bar*/
+
+body {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.side-bar {
+	background-color: rgb(0,0,0);
+	color: rgb(178,178,178);
+	width: 241px;
+}
+
+.logo {
+	padding: 18px 24px;
+}
+
+.logo img {
+	width: 131px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link {
+	text-decoration: none;
+	color: rgb(178,178,178);
+}
+
+a:visited {
+	text-decoration: none;
+	color: rgb(178,178,178);
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+.home a:link {
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+.navigation {
+	padding: 0px 16px;
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
+.navigation ul {
+	padding: 18px 10px;
+}
+
+.navigation li {
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+i {
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+.your-library i {
+	padding-left: 10px;
+}
+
+.song-related {
+	padding: 0px 16px;
+	font-size: 14px;
+}
+
+.song-related ul {
+	padding: 0px 10px;
+}
+
+.song-related li {
+	padding-bottom: 20px;
+}
+
+.line-divider {
+	border: 1px solid #282828;
+	margin: 0px 24px;
+}
+
+.playlists {
+	height: 241px;
+	padding-top: 8px;
+	padding-left: 24px;
+}
+
+.install {
+	padding: 0px 16px;
+	font-size: 14px;
+}
+
+.install ul {
+	padding: 0px 10px;
+}
+
+.install li {
+	padding-bottom: 10px;
+}
