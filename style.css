@@ -6,6 +6,7 @@ body {
 }
 
 .side-bar {
+	position: fixed;
 	background-color: rgb(0,0,0);
 	color: rgb(178,178,178);
 	width: 241px;
@@ -104,4 +105,91 @@ i {
 
 .install li {
 	padding-bottom: 10px;
+}
+
+/*main page*/
+.wrap {
+	display: flex;
+}
+
+.main-page {
+	margin-left: 241px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 1060px;
+	padding: 16px 32px;
+	background-color: rgb(22,22,22);
+}
+
+.arrows {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 16px;
+}
+
+.arrows button {
+	width: 32px;
+	height: 32px;
+	background-color: rgb(13,13,13);
+	color: rgb(143,143,143);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.upgrade-button {
+	margin-right: 20px;
+	padding: 0px;
+	padding-top: 0px;
+	background-color: rgb(22,22,22);
+	border: 1px solid rgb(251,251,251);
+	border-radius: 25px;
+	color: rgb(251,251,251);
+	font-size: 14px;
+	width: 88px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.upgrade-button:hover {
+	border: 2px solid rgb(251,251,251);
+	font-size: 15px;
+}
+
+.user {
+	display: flex;
+}
+
+.user-button-wrap {
+	display: flex;
+}
+
+.user-button {
+	padding: 2px 0px;
+	width: 120px;
+	height: 32px;
+	border: none;
+	border-radius: 25px;
+	color: rgb(251,251,251);
+	background-color: rgb(7,7,7);
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.user-button:hover {
+	background-color: rgb(43,43,43);
+}
+
+.user-button img {
+	padding-left: 3px;
+	padding-right: 5px;
+	width: 28px;
+	border-radius: 50%;
+}
+
+.user-button span i {
+	padding-left: 5px;
 }
