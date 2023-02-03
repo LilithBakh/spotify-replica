@@ -3,6 +3,7 @@
 body {
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(22,22,22);
 }
 
 .side-bar {
@@ -26,17 +27,17 @@ ul {
   padding: 0px;
 }
 
-a:link {
+.side-bar a:link {
 	text-decoration: none;
 	color: rgb(178,178,178);
 }
 
-a:visited {
+.side-bar a:visited {
 	text-decoration: none;
 	color: rgb(178,178,178);
 }
 
-a:hover {
+.side-bar a:hover {
 	text-decoration: none;
 	color: rgb(255,255,255);
 }
@@ -144,11 +145,12 @@ i {
 	margin-right: 20px;
 	padding: 0px;
 	padding-top: 0px;
-	background-color: rgb(22,22,22);
+	background-color: transparent;
 	border: 1px solid rgb(251,251,251);
 	border-radius: 25px;
 	color: rgb(251,251,251);
 	font-size: 14px;
+	font-weight: bold;
 	width: 88px;
 	height: 32px;
 	cursor: pointer;
@@ -176,6 +178,7 @@ i {
 	color: rgb(251,251,251);
 	background-color: rgb(7,7,7);
 	font-size: 14px;
+	font-weight: bold;
 	cursor: pointer;
 }
 
@@ -192,4 +195,77 @@ i {
 
 .user-button span i {
 	padding-left: 5px;
+}
+
+/*good afternoon albums*/
+.good-afternoon {
+	padding: 24px 32px;
+	background-color: rgb(22,22,22);
+	color: rgb(255,255,255);
+}
+
+.good-afternoon h2 {
+	font-size: 32px;
+}
+
+.album-style-one {
+	display: flex;
+	height: 80px;
+	width: 337px;
+	background-color: rgb(45,45,45);
+	border-radius: 5px;
+}
+
+.album-row-one, .album-row-two {
+	display: flex;
+	justify-content: space-between;
+}
+
+.album-row-two {
+	margin-top: 15px;
+}
+
+.album-style-one img {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.album-style-one section{
+	padding: 0px 16px;
+	width: 257px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.album-style-one section a:link, a:visited, a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+.album-style-one section a p {
+	margin: 0px;
+	margin-top: 32px;
+}
+
+.album-style-one section span i {
+	color: rgb(0,0,0);
+	background-color: rgb(30, 215, 96);
+	padding: 15px 17px;
+	border-radius: 50%;
+	margin: 15px 0px;
+	display: none;
+}
+
+.album-style-one section {
+	transition-duration: 500ms;
+}
+
+.album-style-one section:hover span i {
+	display: grid;
+ 	cursor: pointer;
+}
+
+.album-style-one section:hover {
+	background-color: rgb(66,66,66);
 }
