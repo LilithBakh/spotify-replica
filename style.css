@@ -40,6 +40,7 @@ ul {
 .side-bar a:hover {
 	text-decoration: none;
 	color: rgb(255,255,255);
+	font-weight: normal;
 }
 
 .home a:link {
@@ -123,6 +124,7 @@ i {
 	width: 1060px;
 	padding: 16px 32px;
 	background-color: rgb(22,22,22);
+	position: fixed;
 }
 
 .arrows {
@@ -199,12 +201,14 @@ i {
 
 /*good afternoon albums*/
 .good-afternoon {
+	width: 97%;
 	padding: 24px 32px;
-	background-color: rgb(22,22,22);
+	background-color: rgb(18,18,18);
 	color: rgb(255,255,255);
 }
 
 .good-afternoon h2 {
+	padding-top: 24px;
 	font-size: 32px;
 }
 
@@ -268,4 +272,69 @@ i {
 
 .album-style-one section:hover {
 	background-color: rgb(66,66,66);
+}
+
+/*Shows*/
+.shows-wrap {
+	padding: 24px 32px;
+	background-color: rgb(18,18,18);
+	color: rgb(255,255,255);
+	width: 97%;
+}
+
+.shows-wrap h3 {
+	margin-top: 0px;
+	font-size: 24px;
+}
+
+.shows {
+	display: flex;
+	justify-content: space-between;
+}
+
+.shows1, .shows2, .shows3, .shows4, .shows5  {
+	width: 161px;
+	padding: 16px;
+	background-color: rgb(24,24,24);
+	border-radius: 5px;
+	transition-duration: 500ms;
+	cursor: pointer;
+}
+
+.shows1:hover, .shows2:hover, .shows3:hover, .shows4:hover {
+	background-color: rgb(45,45,45);
+}
+
+.shows5 {
+	background-color: rgb(18,18,18);
+}
+
+.shows img {
+	width: 161px;
+	margin-bottom: 16px;
+	display: block;
+}
+
+.shows a:link {
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.shows a:visited {
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-weight: bold;
+}
+
+.shows a:hover {
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-weight: bold;
+}
+
+.shows p {
+	color: rgb(178,178,178);
+	font-size: 13px;
 }
