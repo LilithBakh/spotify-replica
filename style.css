@@ -1,5 +1,4 @@
 /*Side Bar*/
-
 body {
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
@@ -90,7 +89,7 @@ i {
 	margin: 0px 24px;
 }
 
-.playlists {
+.playlists-names {
 	height: 241px;
 	padding-top: 8px;
 	padding-left: 24px;
@@ -258,7 +257,8 @@ i {
 	padding: 15px 17px;
 	border-radius: 50%;
 	margin: 15px 0px;
-	display: none;
+	opacity: 0;
+	transition: all ease 0.4s;
 }
 
 .album-style-one section {
@@ -266,8 +266,12 @@ i {
 }
 
 .album-style-one section:hover span i {
-	display: grid;
+	opacity: 1;
  	cursor: pointer;
+}
+
+.album-style-one section span i:hover {
+	padding: 16px 18px;
 }
 
 .album-style-one section:hover {
@@ -275,25 +279,28 @@ i {
 }
 
 /*Shows*/
-.shows-wrap {
+.shows-wrap, .playlist-wrap {
 	padding: 24px 32px;
 	background-color: rgb(18,18,18);
 	color: rgb(255,255,255);
 	width: 97%;
 }
 
-.shows-wrap h3 {
+.shows-wrap h3, .playlist-wrap h3 {
 	margin-top: 0px;
 	font-size: 24px;
 }
 
-.shows {
+.shows, .playlists {
 	display: flex;
 	justify-content: space-between;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-.shows1, .shows2, .shows3, .shows4, .shows5  {
+.shows1, .shows2, .shows3, .shows4, .shows5, .play  {
 	width: 161px;
+	height: 282px;
 	padding: 16px;
 	background-color: rgb(24,24,24);
 	border-radius: 5px;
@@ -301,40 +308,81 @@ i {
 	cursor: pointer;
 }
 
-.shows1:hover, .shows2:hover, .shows3:hover, .shows4:hover {
+.shows1:hover, .shows2:hover, .shows3:hover, .shows4:hover, .play:hover {
 	background-color: rgb(45,45,45);
 }
 
 .shows5 {
 	background-color: rgb(18,18,18);
+	cursor: default;
 }
 
-.shows img {
+.shows img, .play img {
 	width: 161px;
 	margin-bottom: 16px;
 	display: block;
 }
 
-.shows a:link {
+.shows a:link, .playlists a:link {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-weight: bold;
 	font-size: 14px;
 }
 
-.shows a:visited {
+.shows a:visited, .playlists a:visited {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-weight: bold;
 }
 
-.shows a:hover {
+.shows a:hover, .playlists a:hover {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-weight: bold;
 }
 
-.shows p {
+.shows p, .playlists p {
 	color: rgb(178,178,178);
 	font-size: 13px;
+}
+
+.play span i {
+	opacity: 0;
+	position: absolute;
+	transform: translate(105px, -160%);
+	color: rgb(0,0,0);
+	background-color: rgb(30, 215, 96);
+	padding: 15px 17px;
+	border-radius: 50%;
+	margin: 15px 0px;
+	transition: all ease 0.4s;
+}
+
+.play span i:hover {
+	padding: 16px 18px;
+}
+
+.play:hover span i {
+	opacity: 1;
+	transform: translate(105px, -180%);
+}
+
+.play a {
+	display: block;
+}
+
+.playlist-wrap h3 a:link {
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+.playlist-wrap h3 a:hover {
+	text-decoration: underline;
+	color: rgb(255,255,255);
+}
+
+.playlist-wrap h3 a:visited {
+	text-decoration: none;
+	color: rgb(255,255,255);
 }
