@@ -3,10 +3,10 @@ body {
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
 	background-color: rgb(22,22,22);
+	overflow-y: hidden;
 }
 
 .side-bar {
-	position: fixed;
 	background-color: rgb(0,0,0);
 	color: rgb(178,178,178);
 	width: 241px;
@@ -45,12 +45,17 @@ ul {
 .home a:link {
 	text-decoration: none;
 	color: rgb(255,255,255);
+	font-weight: bold;
 }
 
 .navigation {
 	padding: 0px 16px;
 	font-size: 14px;
-	margin-bottom: 18px;
+	font-weight: bold;
+}
+
+.navigation a:hover {
+	font-weight: bold;
 }
 
 .navigation ul {
@@ -74,6 +79,11 @@ i {
 .song-related {
 	padding: 0px 16px;
 	font-size: 14px;
+	font-weight: bold;
+}
+
+.song-related a:hover {
+	font-weight: bold;
 }
 
 .song-related ul {
@@ -82,6 +92,20 @@ i {
 
 .song-related li {
 	padding-bottom: 20px;
+}
+
+.fa-heart {
+	font-size: 10px;
+	padding: 5px;
+	margin-right: 5px;
+	background: rgb(54,17,170);
+	background: linear-gradient(135deg, rgba(54,17,170,1) 0%, rgba(128,150,154,1) 90%);
+	border-radius: 2px;
+}
+
+.linked-songs a:hover .fa-heart {
+	background: rgb(54,17,170);
+	background: linear-gradient(135deg, rgba(54,17,170,1) 0%, rgba(149,189,196,1) 77%);
 }
 
 .line-divider {
@@ -93,6 +117,12 @@ i {
 	height: 241px;
 	padding-top: 8px;
 	padding-left: 24px;
+}
+
+.playlists-names a {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 13px;
 }
 
 .install {
@@ -111,25 +141,37 @@ i {
 /*main page*/
 .wrap {
 	display: flex;
+	margin: 0px;
 }
 
+.main-page-scroll {
+	overflow-y: auto;
+	height: calc(100vh - 64px - 90px);
+}
+
+.main-page-scroll::-webkit-scrollbar{
+	display: none;
+  }
+
 .main-page {
-	margin-left: 241px;
+	width: 100%;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
-	width: 1060px;
 	padding: 16px 32px;
 	background-color: rgb(22,22,22);
-	position: fixed;
 }
 
 .arrows {
 	display: grid;
 	grid-auto-flow: column;
 	grid-column-gap: 16px;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+	padding: 0px;
 }
 
 .arrows button {
@@ -198,16 +240,15 @@ i {
 	padding-left: 5px;
 }
 
-/*good afternoon albums*/
+/*Good Afternoon section*/
 .good-afternoon {
-	width: 97%;
 	padding: 24px 32px;
 	background-color: rgb(18,18,18);
 	color: rgb(255,255,255);
 }
 
 .good-afternoon h2 {
-	padding-top: 24px;
+	margin-top: 0px;
 	font-size: 32px;
 }
 
@@ -283,7 +324,6 @@ i {
 	padding: 24px 32px;
 	background-color: rgb(18,18,18);
 	color: rgb(255,255,255);
-	width: 97%;
 }
 
 .shows-wrap h3, .playlist-wrap h3 {
@@ -347,6 +387,32 @@ i {
 	font-size: 13px;
 }
 
+.category-name-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.category-name-wrap p a:link {
+	text-decoration: none;
+	color: rgb(179,179,179);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.category-name-wrap p a:visited {
+	text-decoration: none;
+	color: rgb(179,179,179);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.category-name-wrap p a:hover {
+	text-decoration: underline;
+	color: rgb(179,179,179);
+	font-size: 14px;
+	font-weight: bold;
+}
+
 .play span i {
 	opacity: 0;
 	position: absolute;
@@ -386,3 +452,4 @@ i {
 	text-decoration: none;
 	color: rgb(255,255,255);
 }
+
